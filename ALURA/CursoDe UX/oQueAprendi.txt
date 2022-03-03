@@ -28,3 +28,13 @@
 -3.5.2- Efeitos sonoros; gatilhos, interações. Audiovisuais.
 
 4- A finalidade do APP se preocupa com o clinte? Onde ele se localiza. Quais suas características. Qual o perfil psicolócio. Ambiente, Humor.
+
+5- o Termo usabilidade significa pesquisa, facilidade de uso, saber o que funciona ou nao e facilitar o uso do produto.
+
+6- Design thinking seria o caminha a se seguir, quais seriam as rotas do app, faz sentido?
+
+7- Design sprint seria o caminho que a equipe de desenvolvimento irá seguir para desenvolver.
+
+8- Brainstorm, ter ideias, acolher ideias.
+
+9- 
