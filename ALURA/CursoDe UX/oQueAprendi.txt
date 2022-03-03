@@ -1,0 +1,30 @@
+1- Antes de começar um projeto, precisamos pensar qual o objetivo do USUÁRIO!
+
+2- O termo UX foi criado por Donal Norman, quando o mesmo trabalhava na Apple, pois na epóca nao existia um termo para o que ele fazia, "Eu faço algo a mais, então..vou criar um termo". Assim surgiu o UX. https://www.youtube.com/watch?v=9BdtGjoIN4E.
+
+3- Dan Saffer inventou o user experience designe, um gráfico que nos mostra as categorias que o UX abrange. https://uxdesign.blog.br/as-disciplinas-da-experi%C3%AAncia-do-usu%C3%A1rio-a8288581a3a1.
+
+3.1- Arquitetura da informação:
+-3.1.1- estruturar a infromação; dar destaque para o que realmente precisa ser destacado, e pouco destaque para o que não precisa.
+-3.1.2- wireframe;
+-3.1.3- Rótulos e navegação; labels, rótulos usados para a nevegação.
+
+3.2- Designe Visual/Interface de Usuário:
+-3.2.1- layout bonito e além; fazer um layout acessível, que seja compatível ao local onde será acesso esta aplciação, tipo, china, cores mais orientais. Brasil, cores mais vivas, russia, cores mais escuras, italia, cores mais pasteis... asism adiante.
+-3.2.2-  Tipografia; ierarquia de fontes, tamanhos das fontes, lógica de sizes e etc.
+-3.2.3- Harmonia cromática; combinação de cores. Casais de cores.
+
+3.3- Design de Interação:
+-3.3.1- VUI; assistente de voz.
+-3.3.2- Chatbot; assistente robo.
+-3.3.3- Microinterações; hovers, befores, laters e etc. Gatilhos e etc. Gatilhos e etc. Gatilhos
+
+3.4- Conteúdo:
+-3.4.1- UX Writing; Decorações de texto.
+-3.4.2- Micro copy; micro textos.
+
+3.5- Sound Design:
+-3.5.1- Concepção sonora; o que eu faço para chamar atenção.
+-3.5.2- Efeitos sonoros; gatilhos, interações. Audiovisuais.
+
+4- A finalidade do APP se preocupa com o clinte? Onde ele se localiza. Quais suas características. Qual o perfil psicolócio. Ambiente, Humor.
