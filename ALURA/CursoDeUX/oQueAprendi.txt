@@ -31,10 +31,8 @@
 
 5- o Termo usabilidade significa pesquisa, facilidade de uso, saber o que funciona ou nao e facilitar o uso do produto.
 
-6- Design thinking seria o caminha a se seguir, quais seriam as rotas do app, faz sentido?
+6- Design thinking seria a abordagem que ajuda a organizar concepção e validação de ideias.
 
 7- Design sprint seria o caminho que a equipe de desenvolvimento irá seguir para desenvolver.
 
 8- Brainstorm, ter ideias, acolher ideias.
-
-9- 
