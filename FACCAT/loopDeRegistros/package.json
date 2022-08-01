@@ -1,0 +1,26 @@
+{
+  "name": "buscasod",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "main.js",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/EduMeurerFaccat/buscasod.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/EduMeurerFaccat/buscasod/issues"
+  },
+  "homepage": "https://gitlab.com/EduMeurerFaccat/buscasod#readme",
+  "type": "module"
+}
