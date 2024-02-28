@@ -1,0 +1,14 @@
+Alteração 1 - 01/09/2021 - ECM
+    - $/
+        - Criado template de desenvolvimento em typescript com React Native;
+        - Realizando o teste rodou a aplicação no android.
+>>> Liberado - 01/09/2021 - Alteração 1 - ECM
+
+Alteração 2 - 01/09/2021 - ECM
+    - $/.gitignore
+        - Atualizado o arquivo '.gitignore' para ignorar a pasta '.vscode' já que a mesma é para ambiente de desenvolvimento e não para o projeto em si
+>>> Liberado - 01/09/2021 - Alteração 2 - ECM <<<
+
+Alteração 3 - 17/09/2021 - ECM
+    - Ajustado nomes das pastas para poder rodar no projeto
+    

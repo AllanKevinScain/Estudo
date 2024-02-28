@@ -1,0 +1,170 @@
+.App {
+  background-color: #282c34;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App-header {
+  height: 50px;
+  width: 100%;
+  margin-left: 80px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.AiOutlineMenu-menu-style {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #282c34;
+  font-size: 1.8rem;
+  height: 50px;
+  width: 80px;
+  border-bottom-right-radius: 30%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #282c34;
+    .AiOutlineMenu-icon-style {
+      color:#fff;
+    }
+    .AiOutlineMenu-menu-style {
+      background-color: #282c34;
+      cursor: pointer;
+    }
+  }
+}
+
+.DrawerOpen {
+  background-color: #fff;
+  width: 200px;
+  height: 100vh;
+  position: absolute;
+
+  animation: drawerOpen 1s;
+
+  @keyframes drawerOpen {
+    from {
+      transform: translateX(-200px);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
+.DrawerClose {
+  background-color: #fff;
+  width: 200px;
+  height: 100vh;
+  position: absolute;
+
+  animation: drawerClose 1s;
+  
+  @keyframes drawerClose {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-200px);
+    }
+  }
+}
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.containerWhite {
+  background-color: #fff;
+  width: 50vw;
+  height: 70vh;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.inputAnimation {
+  border-style: none;
+  /* width: 50%;
+  border-style: none none solid none;
+  border-color: transparent transparent #000 transparent;
+  padding: 4px 8px 4px 8px;
+  transition: width 0.4s ease-in-out; */
+}
+
+.inputAnimation:focus {
+ /*  width: 100%; */
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.loginBackground {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(112,9,121,1) 26%, rgba(0,212,255,1) 100%);
+}
+
+.infoContainer {
+  background-color: '#616161';
+  /* opacity: 0.3; */
+  width: 50vw;
+  height: 50vh;
+}
+
+.buttonEffect {
+
+  &:hover {
+    animation: buttonEffect 1s;
+
+    @keyframes buttonEffect {
+      0% {
+        margin: 0 0% 0 0%;
+      }
+
+      50% {
+        margin: 0 5% 0 5%;
+      }
+    
+      100% {
+        margin: 0 0% 0 0%;
+      }
+    }
+  }
+
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.buttonEffectNoAnimation {
+
+  &:hover {
+    background-color: transparent !important;
+  }
+
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 2px;
+  border-style: solid;
+}

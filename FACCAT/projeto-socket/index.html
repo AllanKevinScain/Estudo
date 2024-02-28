@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+  </head>
+  <body>
+    <input id="valorEmTela" type="number" disabled value="none" /><br />
+    Valor: <input id="somar" type="number" autocomplete="off" /> Hora: <input id="inputHoraSomar" autocomplete="off" /> Minuto: <input id="inputMinutoSomar" autocomplete="off" /><button id="botaoSomar" onclick="">Somar</button><br />
+    Valor: <input id="subtrair" type="number" autocomplete="off" /> Hora: <input id="inputHoraSubtrair" autocomplete="off" /> Minuto: <input id="inputMinutoSubtrair" autocomplete="off" /><button id="botaoSubtrair" onclick="">Subtrair</button><br />
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script>
+      var socket = io();
+      var valorEmTela = document.getElementById('valorEmTela');
+
+      function pushSaldo() {
+
+        socket.emit('callSaldo');
+
+        socket.on('getSaldo', function(saldo) {
+          console.log(saldo);
+          valorEmTela.value = saldo;
+        });
+
+      };
+      pushSaldo();
+
+      var valor100 = parseInt(valorEmTela.value);
+
+      var inputSomar = document.getElementById('somar');
+      var inputHoraSomar = document.getElementById('inputHoraSomar');
+      var inputMinutoSomar = document.getElementById('inputMinutoSomar');
+
+      var inputSubtrair = document.getElementById('subtrair');
+      var inputHoraSubtrair = document.getElementById('inputHoraSubtrair');
+      var inputMinutoSubtrair = document.getElementById('inputMinutoSubtrair');
+
+      document.getElementById('botaoSomar').addEventListener('click', function() {
+
+          socket.emit('somar', inputSomar.value, valor100);
+          socket.emit('inputHoraSomar', inputHoraSomar.value);
+          socket.emit('inputMinutoSomar', inputMinutoSomar.value);
+
+          inputSomar.value = '';
+          inputHoraSomar.value = '';
+          inputMinutoSomar.value = '';
+      });
+
+      document.getElementById('botaoSubtrair').addEventListener('click', function() {
+
+        console.log(valor100);
+          socket.emit('subtrair', inputSubtrair.value, valor100);
+          socket.emit('inputHoraSubtrair', inputHoraSubtrair.value);
+          socket.emit('inputMinutoSubtrair', inputMinutoSubtrair.value);
+
+          inputSubtrair.value = '';
+          inputHoraSubtrair.value = '';
+          inputMinutoSubtrair.value = '';
+      });
+
+      //input que coloca o valor
+      socket.on('somar', function(valorDoBack) {
+        /* console.log(value); */
+        document.getElementById('valorEmTela').value = valorDoBack;
+      });
+      socket.on('subtrair', function(value) {
+        /* console.log(value); */
+        document.getElementById('valorEmTela').value = value;
+      });
+
+
+      //input da que adiciona a hora
+      socket.on('inputHoraSomar', function(value) {
+        /* console.log(value); */
+        document.getElementById('valorEmTela').innerHTML = value;
+      });
+      socket.on('inputHoraSubtrair', function(value) {
+        /* console.log(value); */
+        document.getElementById('valorEmTela').innerHTML = value;
+      });
+
+
+      //input que adiciona o minuto
+      socket.on('inputMinutoSomar', function(value) {
+        /* console.log(value); */
+        document.getElementById('valorEmTela').innerHTML = value;
+      });
+      socket.on('inputMinutoSubtrair', function(value) {
+        /* console.log(value); */
+        document.getElementById('valorEmTela').innerHTML = value;
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "teste_envio",
+  "version": "1.0.0",
+  "description": "teste para enviar email",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Allan Scain",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.6.1"
+  }
+}

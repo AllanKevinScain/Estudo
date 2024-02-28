@@ -1,0 +1,360 @@
+{
+	"info": {
+		"_postman_id": "d162127c-b54e-497f-b5d9-7b7e28cbae6d",
+		"name": "faccat_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cadastrarUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"maria\",\r\n    \"titulo\": \"senhora\",\r\n    \"email\": \"maria@gmail.com\",\r\n    \"telefone\": \"(54)9982521062\",\r\n    \"senha\": \"maria123\",\r\n    \"cargo_idcargo\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/cadastrarusuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cadastrarusuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastrarCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"pedro\",\r\n    \"titulo\": \"senhor\",\r\n    \"email\": \"pedro@gmail.com\",\r\n    \"telefone\": \"(54)9468787879\",\r\n    \"senha\": \"pedro123\",\r\n    \"idusuario\": \"4\",\r\n    \"tipocliente_idtipocliente\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/cadastrarcliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cadastrarcliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastrarCargo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descrição\": \"oculista\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/cadastrarcargo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cadastrarcargo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastrarTipoCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descrição\": \"f***\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/cadastrartipocliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cadastrartipocliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"anderson@gmail.com\",\r\n    \"senha\": \"anderson123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/logarusuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"logarusuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterarUsuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"maria@gmail.com\",\r\n    \"nome\": \"_nome\",\r\n    \"sexo\": \"_sexo\",\r\n    \"estadocivil\": \"_estadocivil\",\r\n    \"cpf\": \"_cpf\",\r\n    \"datanascimento\": \"_datanascimento\",\r\n    \"nacionalidade\": \"_nacionalidade\",\r\n    \"celular\": \"_celular\",\r\n    \"cep\": \"_cep\",\r\n    \"bairro\": \"_bairro\",\r\n    \"logradouro\": \"_logradouro\",\r\n    \"cidade\": \"_cidade\",\r\n    \"numero\": \"_numero\",\r\n    \"complemento\": \"_complemento\",\r\n    \"estado\": \"_estado\",\r\n    \"ocupacao\": \"_ocupacao\",\r\n    \"grauinstrucao\": \"_grauinstrucao\",\r\n    \"vincempregaticio\": \"_vincempregaticio\",\r\n    \"rendamensal\": \"_rendamensal\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/alterarusuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"alterarusuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterarCliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"_nome\",\r\n    \"sexo\": \"_sexo\",\r\n    \"estadocivil\": \"_estadocivil\",\r\n    \"cpf\": \"_cpf\",\r\n    \"datanascimento\": \"_datanascimento\",\r\n    \"nacionalidade\": \"_nacionalidade\",\r\n    \"celular\": \"_celular\",\r\n    \"cep\": \"_cep\",\r\n    \"bairro\": \"_bairro\",\r\n    \"logradouro\": \"_logradouro\",\r\n    \"cidade\": \"_cidade\",\r\n    \"numero\": \"_numero\",\r\n    \"complemento\": \"_complemento\",\r\n    \"estado\": \"_estado\",\r\n    \"ocupacao\": \"_ocupacao\",\r\n    \"grauinstrucao\": \"_grauinstrucao\",\r\n    \"vincempregaticio\": \"_vincempregaticio\",\r\n    \"rendamensal\": \"_rendamensal\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/alterarcliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"alterarcliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterarSenha",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"anderson@gmail.com\",\r\n    \"senha\": \"novaSenha\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/alterarsenha",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"alterarsenha"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletarUsuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"lucas@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/deletarusuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"deletarusuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletarCliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"joao@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/deletarcliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"deletarcliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lerUsuario",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"maria@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/lerusuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"lerusuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lerCliente",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"joao@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/lercliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"lercliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lerTodosClientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}

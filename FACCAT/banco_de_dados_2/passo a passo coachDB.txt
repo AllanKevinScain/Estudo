@@ -1,0 +1,32 @@
+Passo 1.
+Download no site https://couchdb.apache.org/
+
+Passo 2.
+Instalar e criar um admin:
+nome: admin
+senha: admin
+cookie: 7413515E343E7A9750357F45E8249F52
+
+Passo 3.
+Reiniciar a máquina e acessar http://localhost:5984/_utils/#login
+Logar
+
+Passo 4.
+Acessar http://localhost:5984/_utils/#/verifyinstall
+Verificar se está tudo certo
+
+Passo 5.
+Acessar http://localhost:5984/_utils/#/setup
+Clique em "configure a single Node" se quiser um servidor simples, caso contrário em "configure a cluster"
+Preencha os campos conforme você precisa: admin admin 0.0.0.0 5894
+Clique no link mostrado
+
+Passo 6.
+Acesse http://localhost:5984/_utils/#/_all_dbs
+Crie seu banco
+
+Passo 7.
+criar o crud
+url auxiliares:
+http://localhost:5984/_utils/docs/api/local.html
+http://localhost:5984/_utils/docs/api/basics.html

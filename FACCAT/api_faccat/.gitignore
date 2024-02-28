@@ -1,0 +1,8 @@
+node_modules/
+
+public/uploads/empresa-banner/*
+!public/uploads/empresa-banner/.gitkeep
+
+public/uploads/usuario-avatar/*
+!public/uploads/usuario-avatar/.gitkeep
+!public/uploads/usuario-avatar/avatar-exemplo.jpg
