@@ -18,15 +18,17 @@ int *arrayOfNumbers(int qty) {
     return array;
 }
 
-long long int power(long long int base, long long int exp, long long int mod) {
+long long int miller(long long int base, long long int exp, long long int mod) {
     long long int result = 1;
-    base %= mod;
+    base = base % mod;
     while (exp > 0) {
-        if (exp & 1)
+        if (exp & 1) {
             result = (result * base) % mod;
-        exp >>= 1;
+        }
+        exp = exp >> 1;
         base = (base * base) % mod;
     }
+
     return result;
 }
 
@@ -36,18 +38,20 @@ bool millerRabin(long long int n, int k) {
 
     long long int d = n - 1;
     int s = 0;
-    while (d % 2 == 0) {
+    while (d % 2 == 0) {                                    n
         d = d / 2;
         s++;
     };
 
     for (int i = 0; i < k; i++) {
         long long int a = rand() % (n - 4) + 2;
-        long long int x = power(a, d, n);
+        long long int x = miller(a, d, n);
+
         if (x == 1 || x == n - 1) continue;
 
         for (int j = 0; j < s - 1; j++) {
-            x = power(x, 2, n);
+            x = miller(x, 2, n);
+
             if (x == 1) return false;
             if (x == n - 1) break;
         }
@@ -69,7 +73,7 @@ int main() {
     clock_t inicio = clock();
     for (int i = 0; i < ateQualNumeroSeraTestado; i++) {
         if (millerRabin(array[i], ateQualNumeroSeraTestado)) {
-            printf("%d ", array[i]);
+            printf("%d numero primo \n", array[i]);
         }
     }
     clock_t fim = clock();
